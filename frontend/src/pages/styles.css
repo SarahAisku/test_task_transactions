@@ -1,0 +1,225 @@
+.Main_Container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .Container{
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 53% 47%;
+  }
+
+  @media (max-width:920px) {
+    .Container{
+        grid-template-columns: 50% 50%;
+    }
+  }
+
+
+.Art{
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 30px 32px 0px;
+}
+
+    .Art_Container{
+        background-image: url('../media/Photo.png');
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Art_Table_Container{
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        font-weight: 650;
+        font-size: 12px;
+        display: grid;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+    .Art_Table_Container div table thead tr th{
+        padding: 0px 5px 5px 5px;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+    .Art_Table_Container div table thead tr th:last-child {
+        border-right: 0px;
+    }
+    
+    .Art_Table_Container div table tbody tr td{
+        padding: 5px 5px 5px 5px;
+        border-right: 1px solid #fff;
+    }
+    .Art_Table_Container div table tbody tr td:last-child{
+        border-right: 0px;
+    }
+    
+
+
+
+.Left_side_8Column{
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+    padding: 32px 30px 32px 30px;
+    display: flex;
+    justify-content: center;
+}
+    .Login_Form{
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+        .Info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
+            .h1-Info{
+                font-weight: 600;
+                text-align: start;
+                font-size: 34px;
+            }
+            .p-Info{
+                text-align: start;
+                font-size: 18px;
+                padding-top: 10px;
+            }
+
+        .Form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+            .Input-Container{
+                padding-bottom: 12px;
+            }
+            .Input-p{
+                text-align: start;
+                color: #212121;
+                padding-bottom: 7px;
+            }
+            .Input-input{
+                width: 100%;
+                height: 48px;
+                padding: 0px 24px;
+                border: 1px solid #D4D7E3;
+                background-color: #F7FBFF;
+                border-radius: 12px;
+                transition: all 0.3s ease-in-out;
+            }
+            select.Input-input{
+                appearance: none;
+                color: #757575;
+                outline: none;
+                cursor: pointer;
+                transition: all 0.3s;
+                appearance: none;
+            }
+            select.Input-input.selected {
+                color: #212121;
+            }
+
+            .Input-input:hover{
+                border: 1px solid #2569a5;;
+                background-color: #ffffff;
+            }
+            .MainButton-a{
+                height: 48px;
+                padding: 12px 14px;
+                background-color: #444CE7;
+                color: #ffffff;
+                transition: all 0.4s;
+                border-radius: 12px;
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 1%;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            .MainButton-a:hover{
+                background-color: #303afb;
+            }
+
+
+
+@media (max-width:1050px) {
+    .Art{padding: 26px 24px 26px 0px;}
+    .Left_side_8Column{padding: 26px 24px;}
+}
+
+
+@media (max-width:864px) {
+    p{font-size: 14px;}
+
+    .Container{grid-template-columns: none; grid-template-rows: 29% 71%; height: 100vh;}
+
+    .Art{order: -1; height: 100%; padding: 26px 24px 10px 24px;}
+
+    .Left_side_8Column{height: 100%; width: 100%; 
+                       padding: 10px 30px 26px 30px; 
+                       display: flex; 
+                       flex-direction: column;
+                       justify-content: start;
+                       align-items: center;
+                      }
+    .Login_Form{flex: 0.89; width: 98%; justify-content: start;}
+
+    .h1-Info,.p-Info{text-align: center;}
+    .h1-Info{margin-left: 3%; font-size: 28px;}
+    .p-Info{font-size: 16px; padding-top: 5px;}
+
+
+    .Art_Table_Container{
+        overflow-y: auto;
+        max-height: 120px;
+    }
+}
+
+
+@media (max-width:650px) {
+    .h1-Info,.p-Info{text-align: start;}
+    .h1-Info{margin-left: 0;}
+}
+@media (max-width:400px) {
+    .h1-Info{font-size: 26px;}
+}
+
+
+@media (max-height:1050px) and (max-width:770px) {
+    .Login_Form{flex: 0.79;}
+}
+@media (max-height:940px) and (max-width:500px) {
+    .Container{grid-template-rows: 30% 70%;}
+    .p-Art{width: 70%; font-size: 12px;}
+    .Login_Form{flex: 0.79; margin-top: 0; width: 95%;}
+
+    .Art{padding: 12px 14px 12px 14px;}
+    .Left_side_8Column{padding: 10px 14px 12px 14px;}
+    .Info{padding-bottom: 25px}
+    .Input-input{height: 42px;}
+    .MainButton-a{height: 42px; font-size: 14px;}
+}
+
+
+@media (max-height:750px) and (max-width:450px) {
+    .Container{grid-template-rows: 24% 76%;}
+    .p-Art{width: 85%; font-size: 12px;}
+    .Login_Form{flex: 0.89; margin-top: 0;}
+}
