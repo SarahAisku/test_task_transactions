@@ -1,0 +1,18 @@
+ssh -A -L 27100:10.128.0.55:27017  -L 27101:10.128.0.33:27017 -L 27102:10.128.0.35:27017 -L 27103:10.128.0.51:27017 -L 27104:10.128.0.14:27017 -L 27105:10.128.0.19:27017 -i C:\Users\Sarah\Desktop\ss\salescout-admin-api\ss-yandex.html salescout@5.35.107.104 -N -v
+
+
+    const storeId = "671c8fcb7ae68a805209e525"
+    const countOfActiveProducts = 341
+    const countOfArchiveProducts = 173
+    
+http://localhost:30070/api/product/624c064af7c2df30c25649a1
+
+
+http://localhost:30070/api/mapping-dashboard/categories
+
+
+http://localhost:30070/api/updare-info-total-products/actualizeProducts
+
+{
+    "storeId": "628ccc7e3f4902e9f72221bb"
+}
